@@ -8,3 +8,12 @@ class JobStatus(str, Enum):
     running = 'running'
     completed = 'completed'
     failed = 'failed'
+class LineOrderStatus(str, Enum):
+    pending = 'pending'
+    effective = 'effective'
+    voided = 'voided'
+    reversing = 'reversing'
+    reversed = 'reversed'
+class HandoverSide(str, Enum):
+    from_line = 'from'
+    to_line = 'to'
